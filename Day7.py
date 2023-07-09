@@ -19,18 +19,20 @@ check = list(chosen_word)
 display = []
 for letter in check:
     display.append("_")
-print(display)
 
+##Game loop
 #Ask user to guess a letter
-guess = input("Guess a letter: ").lower()
-
 #Check if that letter is in the word
-iteration = 0
-for letter in check:
-    iteration += 1
-    if letter == guess:
-        display[iteration-1] = letter
-    else:
-        continue
+#Add correctly guessed letter to display
 
-print(display)
+while display != check:
+    guess = input("Guess a letter: ").lower()
+    iteration = 0
+    for letter in check:
+        iteration += 1
+        if letter == guess:
+            display[iteration-1] = letter
+        else:
+            continue
+    print(display)
+print("You win!")
