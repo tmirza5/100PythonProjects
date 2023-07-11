@@ -4,7 +4,8 @@
 import random
 
 #Create word bank
-word_bank = ['abruptly', 
+word_bank = [
+'abruptly', 
 'absurd', 
 'abyss', 
 'affix', 
@@ -216,7 +217,8 @@ word_bank = ['abruptly',
 'zilch', 
 'zipper', 
 'zodiac', 
-'zombie']
+'zombie'
+]
 
 #Choose random word
 chosen_word = random.choice(word_bank)
